@@ -1,10 +1,16 @@
+/*-------------------------------
+        setting the fonts
+---------------------------------*/
 *{
     font-family: 'Open Sans', sans-serif;
     margin: 0;
 }
+/*-------------------------------
+            the header 
+--------------------------------*/
 .header{
     background-color: #FFF8F3 ;
-    background-image: url('./images./header_bg.png'),url('./images./developer.png');
+    background-image: url('images/header_bg.png'),url('images/developer.png');
     background-repeat: no-repeat;
     background-position: bottom right, left;
 }
@@ -17,41 +23,43 @@
     background-color: #FD6E0A;
     padding: 15px 35px;
     border: none;
-    border-radius: 5px;
-}
-
-/* header and navigation style */
-.nav-title{
-   font-style: normal;
-   font-weight: 800;
-   font-size: 45px;
-   line-height: 61px;
+    border-radius: 10px;
 }
 .special-char{
     color: #FD6E0A;
 }
-nav{
-    display: flex;
-    justify-content: space-between;
-    padding: 50px 200px;
+/*-------------------------------
+            the navbar 
+---------------------------------*/
+.nav-title{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 61px;
 }
-nav ul{
-    display: flex;
-    align-items: center;
+.nav{
+     display: flex;
+     justify-content: space-between;
+     padding: 50px 150px;
 }
-nav li{
-    list-style: none;
-    margin-left: 50px;
+.nav ul{
+     display: flex;
+     align-items: center;
 }
-/* banner arts */
+.nav li{
+     list-style: none;
+     margin-left: 50px;
+}
+/*-------------------------------
+        the intro section 
+---------------------------------*/
 .banner{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin-left: 5%;
-    padding-left: 4%;
+    padding: 50px 150px 8px;
     }
-.shout{
+.entry{
     font-weight: 600;
     font-size: 3em;
 }
@@ -70,16 +78,25 @@ nav li{
     background-color: #FD6E0A;
     color: #FFFFFF;
     margin-right: 20px;
+    padding: 20px;
     border: none;
-    padding:18px 24px ;
+    border-radius: 10px;
+
 }
 .button-2{
     color: #FD6E0A;
-    border-color: #FD6E0A;
+    background-color: #FFFFFF;
     display: inline-block;
-    padding: 18px 24px;
+    padding: 20px;
+    border: 2px solid #FD6E0A;
+    border-radius: 10px;
 }
-/* about section */
+.main-image{
+    margin-bottom: -13px;
+}
+/*-------------------------------
+        the about section 
+---------------------------------*/
 .about-section{
     background: #FFF8F3;
     border-radius: 10px;
@@ -99,7 +116,6 @@ nav li{
    padding-top: 30px;
    padding-bottom: 30px;
 }
-/* about-info-section*/
 .about-info{
     display: flex;
     justify-content: space-around;
@@ -113,10 +129,12 @@ nav li{
     font-size: 20px;
     font-weight: 700;
 }
- /* What I do section */
- .whatIDo{
-    padding:2% 7% 2% 7%;
- }
+/*-------------------------------
+      the what i do section 
+---------------------------------*/
+.what-i-do-container{
+    padding: 80px 100px;
+}
 .what-title{
     font-weight: 700;
     font-size: 35px;
@@ -126,32 +144,35 @@ nav li{
 .what-description{
     text-align: center;
     color: #757575;
-    padding-top: 2%;
+    padding: 40px 30px;
 }
 
-/* the skill section */
+/*-------------------------------
+      the skill section
+---------------------------------*/
 .skill-group{
     display: flex;
-    gap: 24px;
+    gap: 20px;
 }
 .skill-individual{
     background: #FFFFFF;
     box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.06);
     border-radius: 5px;
-    padding: 30px;
-    margin: 0px 10px;
+    padding: 20px;
 }
 .skill-title{
     font-size: 20px;
     font-weight: 700;
-    padding-top: 30px;
+    padding-top: 20px;
     padding-bottom: 20px;
 }
 .skill-description{
     font-size: 16px;
     color: #757575;
 }
- /* the educational summery section */
+/*-------------------------------
+      the education section
+---------------------------------*/
 .education-title{
     font-weight: 700;
     font-size: 35px;
@@ -206,9 +227,12 @@ hr{
     background-color: #FD6E0A;
     color: #FFFFFF;
     border: none;
-    padding:18px 24px ;   
+    padding: 20px;
+    border-radius: 10px;   
 }
-/* The footer section */
+/*-------------------------------
+      the navigation section
+---------------------------------*/
 .footer{
     display: flex;
     gap: 100px;
@@ -239,12 +263,16 @@ input{
     margin-top: 30px;
     height: 60px;
 }
-/* responsive styles */
+
+
+/*-------------------------------
+      for mobile devices
+---------------------------------*/
 @media  screen  and (max-width:576px) {
     .header{
         background-image: none;
     }
-    .banner, nav, .education, .skill-group, .whatido, .about-info, .footer {
+    .banner, nav, .education, .skill-group, .whatIDo, .about-info, .footer {
         flex-direction: column;
         padding-left: 10px;
         padding-right: 10px;
@@ -257,11 +285,14 @@ input{
         padding: 0px 0px 0px 5px;
     }
 }
+/*-------------------------------
+      for medium devices
+---------------------------------*/
 @media screen and (min-width:577px) and (max-width:992px) {
     .header{
         background-image: none;
     }
-    .banner, nav, .education, .skill-group, .whatido, .about-info, .footer {
+    .banner, nav, .education, .skill-group, .whatIDo, .about-info, .footer {
         width: 100%;
         flex-direction: column;
         padding-left: 10px;
