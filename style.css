@@ -4,7 +4,7 @@
 }
 .header{
     background-color: #FFF8F3 ;
-    background-image: url('images/header_bg.png'),url('images/developer.png');
+    background-image: url('./images./header_bg.png'),url('./images./developer.png');
     background-repeat: no-repeat;
     background-position: bottom right, left;
 }
@@ -114,7 +114,7 @@ nav li{
     font-weight: 700;
 }
  /* What I do section */
- .whatido{
+ .whatIDo{
     padding:2% 7% 2% 7%;
  }
 .what-title{
